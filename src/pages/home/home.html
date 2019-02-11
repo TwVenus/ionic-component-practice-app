@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list reorder="true" (ionItemRecorder)="reorderItems($event)">
+    <ion-item *ngFor="let item of items">{{ item }}</ion-item>
+  </ion-list>
+  <app-touch-event></app-touch-event>
+</ion-content>
